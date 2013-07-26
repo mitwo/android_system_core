@@ -666,6 +666,8 @@ static void import_kernel_nv(char *name, int for_emulator)
         if (cnt < PROP_NAME_MAX)
             property_set(prop, value);
     }
+ // Thanks m1cha , merge from
+ // https://github.com/M1cha/android_system_core/commit/273f9172d75955050fc1f579548a70441d20707b
 	else if (!strncmp(name, "syspart", 7) && name_len > 7) {
         char prop[PROP_NAME_MAX];
         int cnt;
